@@ -103,7 +103,7 @@ namespace NotesManager {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(320, 38);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Менеджер нотаток";
+			this->label1->Text = L"РњРµРЅРµРґР¶РµСЂ РЅРѕС‚Р°С‚РѕРє";
 			// 
 			// label2
 			// 
@@ -114,7 +114,7 @@ namespace NotesManager {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(72, 20);
 			this->label2->TabIndex = 1;
-			this->label2->Text = L"Назва:";
+			this->label2->Text = L"РќР°Р·РІР°:";
 			// 
 			// noteName
 			// 
@@ -140,14 +140,14 @@ namespace NotesManager {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(61, 20);
 			this->label3->TabIndex = 4;
-			this->label3->Text = L"Опис:";
+			this->label3->Text = L"РћРїРёСЃ:";
 			// 
 			// noteCategories
 			// 
 			this->noteCategories->FormattingEnabled = true;
 			this->noteCategories->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
-				L"Дім", L"Робота", L"Навчання", L"Хоббі",
-					L"Спорт", L"Інше..."
+				L"Р”С–Рј", L"Р РѕР±РѕС‚Р°", L"РќР°РІС‡Р°РЅРЅСЏ", L"РҐРѕР±Р±С–",
+					L"РЎРїРѕСЂС‚", L"Р†РЅС€Рµ..."
 			});
 			this->noteCategories->Location = System::Drawing::Point(401, 69);
 			this->noteCategories->Name = L"noteCategories";
@@ -163,7 +163,7 @@ namespace NotesManager {
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(107, 20);
 			this->label4->TabIndex = 6;
-			this->label4->Text = L"Категорія:";
+			this->label4->Text = L"РљР°С‚РµРіРѕСЂС–СЏ:";
 			// 
 			// priority
 			// 
@@ -184,7 +184,7 @@ namespace NotesManager {
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(111, 20);
 			this->label5->TabIndex = 8;
-			this->label5->Text = L"Приорітет:";
+			this->label5->Text = L"РџСЂРёРѕСЂС–С‚РµС‚:";
 			// 
 			// addNoteBtn
 			// 
@@ -196,7 +196,7 @@ namespace NotesManager {
 			this->addNoteBtn->Name = L"addNoteBtn";
 			this->addNoteBtn->Size = System::Drawing::Size(195, 43);
 			this->addNoteBtn->TabIndex = 9;
-			this->addNoteBtn->Text = L"Додати нотатку";
+			this->addNoteBtn->Text = L"Р”РѕРґР°С‚Рё РЅРѕС‚Р°С‚РєСѓ";
 			this->addNoteBtn->UseVisualStyleBackColor = false;
 			this->addNoteBtn->Click += gcnew System::EventHandler(this, &NotesManagerForm::addNoteBtn_Click);
 			// 
@@ -210,7 +210,7 @@ namespace NotesManager {
 			this->clearFieldsBtn->Name = L"clearFieldsBtn";
 			this->clearFieldsBtn->Size = System::Drawing::Size(195, 43);
 			this->clearFieldsBtn->TabIndex = 10;
-			this->clearFieldsBtn->Text = L"Очистити всі поля";
+			this->clearFieldsBtn->Text = L"РћС‡РёСЃС‚РёС‚Рё РІСЃС– РїРѕР»СЏ";
 			this->clearFieldsBtn->UseVisualStyleBackColor = false;
 			this->clearFieldsBtn->Click += gcnew System::EventHandler(this, &NotesManagerForm::clearFieldsBtn_Click);
 			// 
@@ -223,7 +223,7 @@ namespace NotesManager {
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(155, 25);
 			this->label6->TabIndex = 12;
-			this->label6->Text = L"Ваші нотатки:";
+			this->label6->Text = L"Р’Р°С€С– РЅРѕС‚Р°С‚РєРё:";
 			// 
 			// notes
 			// 
@@ -243,7 +243,7 @@ namespace NotesManager {
 			this->deleteNote->Name = L"deleteNote";
 			this->deleteNote->Size = System::Drawing::Size(195, 43);
 			this->deleteNote->TabIndex = 14;
-			this->deleteNote->Text = L"Видалити нотатку";
+			this->deleteNote->Text = L"Р’РёРґР°Р»РёС‚Рё РЅРѕС‚Р°С‚РєСѓ";
 			this->deleteNote->UseVisualStyleBackColor = false;
 			this->deleteNote->Click += gcnew System::EventHandler(this, &NotesManagerForm::deleteNote_Click);
 			// 
@@ -257,7 +257,7 @@ namespace NotesManager {
 			this->updateBtn->Name = L"updateBtn";
 			this->updateBtn->Size = System::Drawing::Size(215, 43);
 			this->updateBtn->TabIndex = 15;
-			this->updateBtn->Text = L"Редагувати нотатку";
+			this->updateBtn->Text = L"Р РµРґР°РіСѓРІР°С‚Рё РЅРѕС‚Р°С‚РєСѓ";
 			this->updateBtn->UseVisualStyleBackColor = false;
 			this->updateBtn->Click += gcnew System::EventHandler(this, &NotesManagerForm::updateBtn_Click);
 			// 
@@ -301,17 +301,17 @@ private: System::Void addNoteBtn_Click(System::Object^ sender, System::EventArgs
 	int prio = (int)priority->Value;
 
 	if (name->Trim() == "") {
-		MessageBox::Show("Неможливо створити нотатку без назви");
+		MessageBox::Show("РќРµРјРѕР¶Р»РёРІРѕ СЃС‚РІРѕСЂРёС‚Рё РЅРѕС‚Р°С‚РєСѓ Р±РµР· РЅР°Р·РІРё");
 		return;
 	}
 	if (noteNames->Contains(name)) {
-		MessageBox::Show("Нотатка з назвою '" + name + "' вже існує!");
+		MessageBox::Show("РќРѕС‚Р°С‚РєР° Р· РЅР°Р·РІРѕСЋ '" + name + "' РІР¶Рµ С–СЃРЅСѓС”!");
 		return;
 	}
 
 	noteNames->Add(name);
 
-	String^ noteSummary = "- Назва: " + name + ", - Приорітет: " + prio + ", - Категорія: " + categories + "- Опис: " + text;
+	String^ noteSummary = "- РќР°Р·РІР°: " + name + ", - РџСЂРёРѕСЂС–С‚РµС‚: " + prio + ", - РљР°С‚РµРіРѕСЂС–СЏ: " + categories + "- РћРїРёСЃ: " + text;
 	notes->Items->Add(noteSummary);
 
 	clearFieldsBtn_Click(sender, e);
@@ -331,7 +331,7 @@ private: String^ GetNoteName() {
 	if (notes->SelectedItem == nullptr) {
 		return nullptr;
 	}
-	String^ namePrefix = "- Назва: ";
+	String^ namePrefix = "- РќР°Р·РІР°: ";
 
 	String^ selectedNote = notes->SelectedItem->ToString();
 	int nameStart = selectedNote->IndexOf(namePrefix);
@@ -340,7 +340,7 @@ private: String^ GetNoteName() {
 	}
 	nameStart += namePrefix->Length;
 
-	int nameEnd = selectedNote->IndexOf(", - Приорітет:", nameStart);
+	int nameEnd = selectedNote->IndexOf(", - РџСЂРёРѕСЂС–С‚РµС‚:", nameStart);
 	if (nameEnd == -1) {
 		return nullptr;
 	}
@@ -351,7 +351,7 @@ private: String^ GetNoteName() {
 private: System::Void deleteNote_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ name = GetNoteName();
 	if (name == nullptr) {
-		MessageBox::Show("Будь ласка, виберіть нотатку для видалення");
+		MessageBox::Show("Р‘СѓРґСЊ Р»Р°СЃРєР°, РІРёР±РµСЂС–С‚СЊ РЅРѕС‚Р°С‚РєСѓ РґР»СЏ РІРёРґР°Р»РµРЅРЅСЏ");
 		return;
 	}
 
@@ -359,12 +359,12 @@ private: System::Void deleteNote_Click(System::Object^ sender, System::EventArgs
 	noteNames->Remove(name);
 	notes->Items->Remove(selectedNote);
 
-	MessageBox::Show("Нотатку '" + name + "' успішно видалено");
+	MessageBox::Show("РќРѕС‚Р°С‚РєСѓ '" + name + "' СѓСЃРїС–С€РЅРѕ РІРёРґР°Р»РµРЅРѕ");
 }
 private: System::Void updateBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ oldName = GetNoteName();
 	if (oldName == nullptr) {
-		MessageBox::Show("Будь ласка, виберіть нотатку для редагування");
+		MessageBox::Show("Р‘СѓРґСЊ Р»Р°СЃРєР°, РІРёР±РµСЂС–С‚СЊ РЅРѕС‚Р°С‚РєСѓ РґР»СЏ СЂРµРґР°РіСѓРІР°РЅРЅСЏ");
 		return;
 	}
 
@@ -379,24 +379,24 @@ private: System::Void updateBtn_Click(System::Object^ sender, System::EventArgs^
 	int newPrio = (int)priority->Value;
 
 	if (newName->Trim() == "") {
-		MessageBox::Show("Неможливо створити нотатку без назви");
+		MessageBox::Show("РќРµРјРѕР¶Р»РёРІРѕ СЃС‚РІРѕСЂРёС‚Рё РЅРѕС‚Р°С‚РєСѓ Р±РµР· РЅР°Р·РІРё");
 		return;
 	}
 
 	if (newName != oldName && noteNames->Contains(newName)) {
-		MessageBox::Show("Нотатка з назвою '" + newName + "' вже існує!");
+		MessageBox::Show("РќРѕС‚Р°С‚РєР° Р· РЅР°Р·РІРѕСЋ '" + newName + "' РІР¶Рµ С–СЃРЅСѓС”!");
 		return;
 	}
 
 	noteNames->Remove(oldName);
 	noteNames->Add(newName);
 
-	String^ updatedNoteSummary = "- Назва: " + newName + ", - Приорітет: " + newPrio + ", - Категорія: " + newCategories + "- Опис: " + newText;
+	String^ updatedNote = "- РќР°Р·РІР°: " + newName + ", - РџСЂРёРѕСЂС–С‚РµС‚: " + newPrio + ", - РљР°С‚РµРіРѕСЂС–СЏ: " + newCategories + "- РћРїРёСЃ: " + newText;
 	int selectedIndex = notes->SelectedIndex;
-	notes->Items[selectedIndex] = updatedNoteSummary;
+	notes->Items[selectedIndex] = updatedNote;
 
 	clearFieldsBtn_Click(sender, e);
-	MessageBox::Show("Нотатку успішно оновлено");
+	MessageBox::Show("РќРѕС‚Р°С‚РєСѓ СѓСЃРїС–С€РЅРѕ РѕРЅРѕРІР»РµРЅРѕ");
 }
 };
 }
