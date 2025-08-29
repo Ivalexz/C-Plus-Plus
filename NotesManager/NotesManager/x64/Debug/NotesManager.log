@@ -1,0 +1,5 @@
+﻿  main.cpp
+  NotesManagerForm.cpp
+  Generating Code...
+  main.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  NotesManager.vcxproj -> D:\it_step\c++\NotesManager\x64\Debug\NotesManager.exe
