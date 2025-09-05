@@ -1,0 +1,4 @@
+D:\it_step\c++\MenuStrip\MenuStrip\x64\Debug\MenuStrip.vcxproj.AssemblyReference.cache
+D:\it_step\c++\MenuStrip\MenuStrip\x64\Debug\MenuStrip.MyForm.resources
+D:\it_step\c++\MenuStrip\MenuStrip\x64\Debug\MenuStrip.vcxproj.GenerateResource.cache
+D:\it_step\c++\MenuStrip\MenuStrip\x64\Debug\MenuStrip.Window.resources

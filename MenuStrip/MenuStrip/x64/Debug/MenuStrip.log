@@ -1,0 +1,17 @@
+﻿  Window.cpp
+D:\it_step\c++\MenuStrip\MenuStrip\MyFunctions.h(91,21): warning C4566: character represented by universal-character-name '\u00E1' cannot be represented in the current code page (1251)
+  (compiling source file 'Window.cpp')
+  
+D:\it_step\c++\MenuStrip\MenuStrip\MyFunctions.h(91,21): warning C4566: character represented by universal-character-name '\u00F3' cannot be represented in the current code page (1251)
+  (compiling source file 'Window.cpp')
+  
+  main.cpp
+D:\it_step\c++\MenuStrip\MenuStrip\MyFunctions.h(91,21): warning C4566: character represented by universal-character-name '\u00E1' cannot be represented in the current code page (1251)
+  (compiling source file 'main.cpp')
+  
+D:\it_step\c++\MenuStrip\MenuStrip\MyFunctions.h(91,21): warning C4566: character represented by universal-character-name '\u00F3' cannot be represented in the current code page (1251)
+  (compiling source file 'main.cpp')
+  
+  Generating Code...
+  main.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  MenuStrip.vcxproj -> D:\it_step\c++\MenuStrip\x64\Debug\MenuStrip.exe
